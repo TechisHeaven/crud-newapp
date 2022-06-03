@@ -1,0 +1,27 @@
+{
+  "name": "crud_app-with-mongo",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "crud",
+    "express"
+  ],
+  "author": "Himanshu verma",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "serve-favicon": "^2.5.0"
+  },
+  "description": ""
+}

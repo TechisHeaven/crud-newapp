@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+
+:root {
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+    background-color: rgb(112, 37, 225);
+}
+
+.text-center a {
+    text-decoration: none;
+    color: white;
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.add_form_input {
+    width: 400px;
+}
+
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 30px;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-nav {
+    margin-bottom: 20px;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.box-nav a {
+    color: white;
+    background: -webkit-linear-gradient(rgb(91, 55, 238), rgb(120, 39, 191));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box-nav a:hover {
+    color: white;
+    background: -webkit-linear-gradient(rgb(58, 36, 146), rgb(78, 22, 128));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box-nav {
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+
+
+
+.box-nav:hover {
+    border: 1px solid #808080;
+    box-shadow: 1px 1px 2px 2px #808080;
+    cursor: pointer;
+}
+
+
+
+.btn:hover {
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+    background-color: white;
+    color: rgb(112, 37, 225);
+    cursor: pointer;
+}
+
+.main_btn {
+    color: rgb(112, 37, 225) !important;
+}
+
+.main_btn:hover {
+    color: rgb(112, 37, 225) !important;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+
+
+
+table {
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td,
+.table th {
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+
+.table td>a.btn {
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0.2em;
+}
+
+
+.table_row:hover {
+    background-color: rgb(180, 155, 217);
+    color: white;
+
+}
+.table_row:hover .main_btn{
+    box-shadow: 0px 0px 0px #e9ecef;
+}
+
+.thead-dark {
+    background-color: rgb(23, 9, 56);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+/* ============================== Add user css here  ================================================== */
+
+
+
+
+
+
+.form-title {
+    margin-top: .2em;
+}
+
+.form-title>h2 {
+    padding: .5em 0;
+}
+
+.new_user {
+    max-width: 786px;
+    margin: auto;
+}
+
+#update_user .form-group,
+#add_user .form-group {
+    margin: .4em 0;
+}
+
+
+/* #update_user .form-group input{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em;
+    margin: auto;
+    border: 1px solid var(--border);
+} */
+
+
+#update_user .flex input,
+#add_user .flex input {
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em;
+    margin: auto;
+    border: 1px solid var(--border);
+}
+
+.add_form_inline {
+    display: inline-block;
+}
+
+
+.form-group {
+    padding: .6em 1em;
+    margin: .5em;
+    margin: auto;
+}
+
+.input {
+    width: 400px;
+}
+
+.radio-gap {
+    margin: 6px;
+}
+
+
+
+.create_btn {
+    background-color: rgb(112, 37, 225);
+    color: white;
+    padding: 8px;
+    border: 0px solid;
+    border-radius: 6px;
+
+}
+
+.create_btn:hover {
+    background-color: rgb(107, 19, 239) !important;
+    border: 0px solid;
+    border-radius: 6px;
+    color: white;
+}
+
+.create_btn:focus {
+    background-color: rgb(56, 8, 129) !important;
+    border: 0px solid;
+    border-radius: 6px;
+    color: white;
+}
+
+#create_btn {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
