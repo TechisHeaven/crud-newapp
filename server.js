@@ -41,6 +41,10 @@ app.use('/img', express.static(path.resolve(__dirname, "assets/img")))
 //img
 app.use('/js', express.static(path.resolve(__dirname, "assets/js")))
 //js
+app.use('/env', express.static(path.resolve(__dirname, '/.env')))
+
+
+
 
 
 
