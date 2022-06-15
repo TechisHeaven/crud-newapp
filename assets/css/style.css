@@ -616,7 +616,9 @@ input[type="email"]:focus {
     .adduserform{
         width: 100%;
     }
-
+    .input{
+        width: 350px;
+    }
 
 
 
