@@ -1,4 +1,4 @@
-const PORT = process.env.PORT || 8080
+
 
 $("#add_user").submit(function (event) {
     alert("Data Inserted Successfully!")
@@ -19,7 +19,7 @@ $("#update_user").submit(function (event) {
     console.log(data)
 
     var request = {
-        "url": `http://localhost:${PORT}/api/users/${data.id}`,
+        "url": `http://localhost:${process.env.PORT}/api/users/${data.id}`,
         "method": "PUT",
         "data": data
     }
@@ -43,7 +43,7 @@ if (window.location.pathname == "/") {
         var id = $(this).attr("data-id")
 
         var request = {
-            "url": `http://localhost:${PORT}/api/users/${id}`,
+            "url": `http://localhost:${process.env.PORT}/api/users/${id}`,
             "method": "DELETE"
         }
         if (confirm("Do you really want to delete this record?")) {
