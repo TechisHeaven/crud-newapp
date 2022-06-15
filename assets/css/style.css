@@ -498,3 +498,109 @@ input[type="email"]:focus {
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design form here */
+
+
+@media screen and (max-width: 480px) {
+
+
+    /* main here */
+
+    .container2 form {
+        overflow: hidden;
+        width: 100%;
+    }
+
+
+    .thead-dark tr{
+        font-size: 10px;
+    }
+    .thead-dark tr th{
+        margin: 0;
+        padding-top: 3px;
+        padding-bottom: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+
+    .hidden{
+        display: none;
+        color: red;
+    }
+
+    .footer_logo{
+        font-size: 30px;
+    }
+
+    .logo_slog{
+        font-size: 1px;
+    }
+    .section_1 p{
+        font-size: 10px;  
+    }
+    
+    .section_2 a{
+        font-size: 10px;
+    }
+    .footer_cont_1{
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+        align-items: center;
+    }
+    .footer_cont_2{
+        width: 80%
+    }
+    .footer_icons li{
+        width: 30px;
+        height:30px;
+        font-size: 15px;
+    }
+    #copyright{
+        font-size: 10px;
+    }
+
+    /* #func_btn{
+        flex-direction: column;
+        display: flex;
+    } */
+
+    .table_row td{
+        font-size: 0.6em;
+    }
+
+    .table_row td{
+        padding: 0;
+    }
+    .text-gradient i{
+        font-size: 10px;
+    }
+
+
+
+    .table td>a.btn{
+        padding: 4px 8px;
+    }
+
+
+
+
+
+
+
+
+}
