@@ -1,8 +1,3 @@
-const dotenv = require('dotenv')
-dotenv.config({ path: 'config.env' })
-
-
-
 
 
 $("#add_user").submit(function (event) {
