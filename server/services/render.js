@@ -1,12 +1,12 @@
 const axios = require('axios')
-
+const PORT = process.env.PORT || 8080
 
 
 
 exports.homeRoutes = (req, res)=>{
     
     // Make a get request to /api/users 
-    axios.get('http://localhost:3000/api/users')
+    axios.get(`http://localhost:${PORT}/api/users`)
         .then(function(response){
             res.render('index',{users : response.data})
         })
@@ -24,7 +24,7 @@ exports.add_user = (req, res)=>{
 
 exports.update_user = (req, res)=>{
     //render update user
-    axios.get('http://localhost:3000/api/users',{params:{id:req.query.id}})
+    axios.get(`http://localhost:${PORT}/api/users`,{params:{id:req.query.id}})
         .then(function(userdata){
             res.render("update_user",{user : userdata.data})
         })
