@@ -18,6 +18,12 @@
             <!-- form handling -->
             <form method="POST" id="update_user">
                 <div class="new_user">
+                    <div class="profile_inp" id="imagePreview">
+                        <label class="pro_label"  for="file"> <img class="image-preview-image" src="/img/upload_photo.jpg" alt="" ></label>
+                        <input class="pro_inp image" id="pro_input" name="pro_input" type="file" accept="image/*">
+                        
+                        <span class="pro_span">Add Your Profile photo</span>
+                    </div>
                     <div class="form-group flex input">
                         <label for="name" class="text-light">Name</label>
                         <input type="hidden" name="id" value="<%= user._id %>">

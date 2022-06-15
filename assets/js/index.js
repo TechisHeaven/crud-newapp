@@ -56,3 +56,33 @@ if (window.location.pathname == "/") {
     })
 }
 
+
+ // preview photo
+
+const inpPhoto = document.getElementById("pro_input");
+const preview_container = document.getElementById("imagePreview");
+const preview_Image = preview_container.querySelector(".image-preview-image");
+
+
+inpPhoto.addEventListener("change",function(){
+    const file = this.files[0];
+
+    if (file){
+        const reader = new FileReader();
+
+
+        
+
+
+        reader.addEventListener("load", function(){
+            preview_Image.setAttribute("src", this.result);
+        })
+
+
+        reader.readAsDataURL(file);
+    }
+
+
+
+})
+

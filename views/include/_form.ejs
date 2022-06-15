@@ -1,40 +1,49 @@
 <!-- add user form -->
             <!-- form handling -->
             <form action="/api/users" method="POST" id="add_user">
-                <div class="new_user">
-                    <div class="form-group flex input">
-                        <label for="name" class="text-light">Name</label>
-                        <input type="hidden" name="id" value="">
-                        <input type="text" name="name" value="" placeholder="Mark clone">
-                    </div>
-                    <div class="form-group flex input">
-                        <label for="name" class="text-light">Email</label>
-                        <input type="email" name="email" value="" placeholder="example@gmail.com">
-                    </div>
-                    <div class="form-group center">
-                        <label for="gender" class="text-light radio-gap">Gender</label>
-                        <div class="radio inline">
-                            <input class="radio-gap" type="radio" name="gender" value="Male">
-                            <label for="gender" class="text-light">Male</label>
+                <div class="pro_container">
+                    
+                    <div class="new_user">
+                        <div class="profile_inp" id="imagePreview">
+                            <label class="pro_label"  for="file"> <img class="image-preview-image" src="/img/upload_photo.jpg" alt="" ></label>
+                            <input class="pro_inp image" id="pro_input" name="pro_input" type="file" accept="image/*">
+                            
+                            <span class="pro_span">Add Your Profile photo</span>
                         </div>
-                        <div class="radio inline center">
-                            <input class="radio-gap" type="radio" name="gender" value="Female">
-                            <label for="gender" class="text-light">Female</label>
+                        <div class="form-group flex input">
+                            <label for="name" class="text-light">Name</label>
+                            <input class="form_inp" type="hidden" name="id" value="">
+                            <input type="text" name="name" value="" placeholder="Mark clone">
                         </div>
-                    </div>
-                    <div class="form-group center">
-                        <label for="gender" class="text-light radio-gap">Status</label>
-                        <div class="radio inline">
-                            <input class="radio-gap" type="radio" name="status" value="Active">
-                            <label for="status" class="text-light">Active</label>
+                        <div class="form-group flex input">
+                            <label for="name" class="text-light">Email</label>
+                            <input type="email" name="email" value="" placeholder="example@gmail.com">
                         </div>
-                        <div class="radio inline">
-                            <input class="radio-gap" type="radio" name="status" value="Inactive">
-                            <label for="status" class="text-light">Inactive</label>
+                        <div class="form-group center">
+                            <label for="gender" class="text-light radio-gap">Gender</label>
+                            <div class="radio inline">
+                                <input class="radio-gap" type="radio" name="gender" value="Male">
+                                <label for="gender" class="text-light">Male</label>
+                            </div>
+                            <div class="radio inline center">
+                                <input class="radio-gap" type="radio" name="gender" value="Female">
+                                <label for="gender" class="text-light">Female</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group" id="create_btn">
-                        <button type="submit" class="btn create_btn text-dark update">Create</button>
+                        <div class="form-group center">
+                            <label for="gender" class="text-light radio-gap">Status</label>
+                            <div class="radio inline">
+                                <input class="radio-gap" type="radio" name="status" value="Active">
+                                <label for="status" class="text-light">Active</label>
+                            </div>
+                            <div class="radio inline">
+                                <input class="radio-gap" type="radio" name="status" value="Inactive">
+                                <label for="status" class="text-light">Inactive</label>
+                            </div>
+                        </div>
+                        <div class="form-group" id="create_btn">
+                            <button id="add" type="submit" class="btn create_btn text-dark update">Create</button>
+                        </div>
                     </div>
                 </div>
             </form>
