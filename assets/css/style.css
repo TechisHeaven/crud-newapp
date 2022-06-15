@@ -602,7 +602,9 @@ input[type="email"]:focus {
         padding-bottom: .5em;
     }
 
-
+    tbody tr{
+        padding: 4px 4px;
+    }
 
 
 
