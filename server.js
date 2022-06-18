@@ -51,11 +51,11 @@ app.use('/env', express.static(path.resolve(__dirname, '/.env')))
 
 
 
-//render 404 page----------------------
+// //render 404 page----------------------
 
-app.use((req, res ,next)=>{
-    res.status(404).render('404.ejs')
-})
+// app.use((req, res ,next)=>{
+//     res.status(404).render('404.ejs')
+// })
 
 
 
