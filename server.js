@@ -57,7 +57,7 @@ app.use('/env', express.static(path.resolve(__dirname, '/.env')))
 //     res.status(404).render('404.ejs')
 // })
 
-route.get('*',(req, res)=>{
+app.get('*',(req, res)=>{
     res.status(404).render('/404.ejs'||'404 page not found sir!!!!!')
 })
 
