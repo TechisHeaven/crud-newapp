@@ -43,7 +43,7 @@ app.use('/js', express.static(path.resolve(__dirname, "assets/js")))
 //js
 app.use('/env', express.static(path.resolve(__dirname, '/.env')))
 
-
+app.use(favicon(path.join(__dirname,'assets','img','favicon.ico')));
 
 
 

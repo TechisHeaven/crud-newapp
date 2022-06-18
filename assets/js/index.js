@@ -71,8 +71,6 @@ inpPhoto.addEventListener("change",function(){
         const reader = new FileReader();
 
 
-        
-
 
         reader.addEventListener("load", function(){
             preview_Image.setAttribute("src", this.result);
