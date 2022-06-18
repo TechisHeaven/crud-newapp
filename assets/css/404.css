@@ -140,12 +140,14 @@ html, button, input, select, textarea {
 h1 {
   text-align: center;
   margin: 30px 15px;
+  color: white;
 }
 .zoom-area { 
   max-width: 490px;
   margin: 30px auto 30px;
   font-size: 19px;
   text-align: center;
+  color: white;
 }
 .link-container {
   text-align: center;
@@ -153,7 +155,7 @@ h1 {
 a.more-link {
   text-transform: uppercase;
   font-size: 13px;
-    background-color: #92a4ad;
+    background-color: #4F03C1;
     padding: 10px 15px;
     border-radius: 0;
     color: #416475;
