@@ -37,7 +37,7 @@ app.set("view engine", "ejs")
 
 // server static files 
 
-app.use(express.static(path.join(__dirname , 'assets')))
+app.use(express.static(path.join(__dirname , 'public')))
 
 
 //load assests ----------------------------------
@@ -49,7 +49,7 @@ app.use('/js', express.static(path.resolve(__dirname, "assets/js")))
 //js
 app.use('/env', express.static(path.resolve(__dirname, '/.env')))
 
-app.use(favicon(path.join(__dirname, 'assets','img','favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public','favicon.ico')));
 
 
 
