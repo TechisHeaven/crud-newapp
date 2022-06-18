@@ -25,6 +25,13 @@ route.get('/add-user',services.add_user)
 
 route.get('/update-user',services.update_user)
 
+
+route.get('*',(req, res)=>{
+    res.status(404).render('/404.ejs'||'404 page not found sir!!!!!')
+})
+
+
+
 //API
 
 route.post('/api/users', controller.create)
