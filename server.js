@@ -57,9 +57,9 @@ app.use('/env', express.static(path.resolve(__dirname, '/.env')))
 //     res.status(404).render('404.ejs')
 // })
 
-app.get('*',(req, res)=>{
-    res.status(404).render('404.ejs')
-})
+// app.get('*',(req, res)=>{
+//     res.status(404).render('404.ejs')
+// })
 
 
 
