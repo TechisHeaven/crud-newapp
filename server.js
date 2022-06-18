@@ -5,6 +5,8 @@ const bodyparser = require("body-parser")
 const path = require('path')
 const favicon = require('serve-favicon')
 const app = express()
+// server favicon files 
+app.use(favicon(path.join(__dirname, 'public','favicon.ico')));
 const connectDB = require('./server/database/connection');
 dotenv.config({ path: 'config.env' })
 const PORT = process.env.PORT || 8080
@@ -35,8 +37,7 @@ app.set("view engine", "ejs")
 
 
 
-// server favicon files 
-app.use(favicon(path.join(__dirname, 'public','favicon.ico')));
+
 
 
 //load assests ----------------------------------
