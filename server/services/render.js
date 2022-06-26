@@ -10,7 +10,7 @@ exports.homeRoutes = (req, res)=>{
     // Make a get request to /api/users 
     axios.get(`http://localhost:${PORT}/api/users`)
         .then(function(response){
-            res.render('index','favicon.ico',{users : response.data})
+            res.render('index',{users : response.data})
         })
         .catch(err=>{
             res.send(err)
