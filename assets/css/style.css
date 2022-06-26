@@ -606,7 +606,8 @@ input[type="email"]:focus {
         padding: 4px 4px;
     }
     .table td {
-        padding: 0.75em !important;
+        padding-top: 0.75em !important;
+        padding-bottom: 0.75em !important;
         vertical-align: top;
         text-align: center;
         border-top: 1px solid var(--light);
