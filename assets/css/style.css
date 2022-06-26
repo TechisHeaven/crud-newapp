@@ -603,6 +603,7 @@ input[type="email"]:focus {
 
     tbody tr{
         padding: 4px 4px;
+        margin: 8px;
     }
     .table td {
         padding-top: 0.75em !important;
