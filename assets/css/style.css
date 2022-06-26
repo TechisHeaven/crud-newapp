@@ -251,6 +251,7 @@ input[type="email"]:focus {
 
 .box-nav a {
     color: white;
+    padding: 6px;
     background: -webkit-linear-gradient(rgb(91, 55, 238), rgb(120, 39, 191));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
