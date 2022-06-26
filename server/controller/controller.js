@@ -60,6 +60,7 @@ exports.find = (req,res)=>{
         Userdb.find()
         .then(user =>{
             res.send(user)
+            res.redirect('/')
         })
         .catch(err=>{
             res.status(500).send({ message:err.message|| "Error Occured while showing (retriving) user information"})
@@ -90,7 +91,6 @@ exports.update = (req,res)=>{
                 res.status(404).send({message: `Cannot Update user with ${id}. May be user not found`})
             }else{
                 res.send(data)
-                res.redirect('/')
             }
         })
         .catch(err=>{

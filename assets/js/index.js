@@ -1,7 +1,9 @@
 
 
 $("#add_user").submit(function (event) {
+
     alert("Data Inserted Successfully!")
+
 })
 
 $("#update_user").submit(function (event) {
@@ -14,7 +16,6 @@ $("#update_user").submit(function (event) {
     $.map(unindexed_array, function (n, i) {
         data[n['name']] = n['value']
     })
-
 
     console.log(data)
 
