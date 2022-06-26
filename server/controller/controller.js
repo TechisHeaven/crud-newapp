@@ -90,6 +90,7 @@ exports.update = (req,res)=>{
                 res.status(404).send({message: `Cannot Update user with ${id}. May be user not found`})
             }else{
                 res.send(data)
+                res.redirect('/')
             }
         })
         .catch(err=>{
