@@ -25,11 +25,6 @@ route.get('/add-user',services.add_user)
 
 route.get('/update-user',services.update_user)
 
-
-
-
-
-
 //API
 
 route.post('/api/users', controller.create)
