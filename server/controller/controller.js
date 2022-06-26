@@ -60,7 +60,6 @@ exports.find = (req,res)=>{
         Userdb.find()
         .then(user =>{
             res.send(user)
-            res.redirect('/')
         })
         .catch(err=>{
             res.status(500).send({ message:err.message|| "Error Occured while showing (retriving) user information"})
