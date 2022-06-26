@@ -11,7 +11,6 @@ exports.homeRoutes = (req, res)=>{
     axios.get(`http://localhost:${PORT}/api/users`)
         .then(function(response){
             res.render('index',{users : response.data})
-            res.render('favicon.ico')
         })
         .catch(err=>{
             res.send(err)
