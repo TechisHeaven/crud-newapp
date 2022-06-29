@@ -23,9 +23,6 @@ exports.notfoundpage = (req, res) => {
     
 
     res.render('404')
-        .catch(err => {
-            res.send(err)
-        })
 
 }
 
