@@ -19,6 +19,12 @@ exports.homeRoutes = (req, res)=>{
 }
 
 
+exports.notfoundpage = (req, res)=>{
+    res.status(404).render('404')
+}
+
+
+
 exports.add_user = (req, res)=>{
     res.render('add_user')
 
