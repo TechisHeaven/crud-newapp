@@ -13,6 +13,10 @@ route.get('/',services.homeRoutes)
 
 
 
+
+//  for 404 page error route here
+route.get('*',services.notfoundpage)
+
 /**
  * @description add user
  * @method GET /add-user

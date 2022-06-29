@@ -71,6 +71,9 @@ app.use('/env', express.static(path.resolve(__dirname, '/.env')))
 app.use('/',require('./server/routes/router'))
 
 
+app.use('*',require('./server/routes/router'))
+
+
 //All PORT's here -----------------------------
 
 app.listen(PORT, () => {

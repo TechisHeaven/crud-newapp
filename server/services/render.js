@@ -18,6 +18,10 @@ exports.homeRoutes = (req, res) => {
 
 }
 
+exports.notfoundpage = (req, res) => {
+    res.render('404')
+}
+
 
 
 
