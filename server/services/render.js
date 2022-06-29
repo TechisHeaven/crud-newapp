@@ -21,7 +21,7 @@ exports.homeRoutes = (req, res)=>{
 exports.notfoundpage = (req, res)=>{
     
     // Make a get request to /api/users 
-    axios.get(`http://localhost:${PORT}/api/users`)
+    axios.get(`http://localhost:${PORT}`)
         .then(function(response){
             res.render('404')
         })
